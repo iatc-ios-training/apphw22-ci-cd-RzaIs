@@ -12,11 +12,11 @@
 		2DDA05112895842B008A2F96 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDA05102895842B008A2F96 /* domain.framework */; };
 		2DDA05122895842B008A2F96 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDA05102895842B008A2F96 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2DDA051C28958457008A2F96 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDA051B28958457008A2F96 /* Media.xcassets */; };
-		2DDA053328958762008A2F96 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2DDA053228958762008A2F96 /* SnapKit */; };
 		2DDA0542289589D4008A2F96 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA0541289589D4008A2F96 /* FirstViewModel.swift */; };
 		2DDA054528958C2B008A2F96 /* PresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA054428958C2B008A2F96 /* PresentationAssembly.swift */; };
 		2DDA054E28958D64008A2F96 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA054D28958D64008A2F96 /* BaseViewController.swift */; };
 		2DDA055028958D86008A2F96 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA054F28958D86008A2F96 /* Router.swift */; };
+		32B6EBF928B02717009D1AA5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 32B6EBF828B02717009D1AA5 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,7 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DDA05112895842B008A2F96 /* domain.framework in Frameworks */,
-				2DDA053328958762008A2F96 /* SnapKit in Frameworks */,
+				32B6EBF928B02717009D1AA5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +151,7 @@
 			);
 			name = presentation;
 			packageProductDependencies = (
-				2DDA053228958762008A2F96 /* SnapKit */,
+				32B6EBF828B02717009D1AA5 /* SnapKit */,
 			);
 			productName = presentation;
 			productReference = 2DDA048C28958230008A2F96 /* presentation.framework */;
@@ -182,7 +182,7 @@
 			);
 			mainGroup = 2DDA048228958230008A2F96;
 			packageReferences = (
-				2DDA053128958762008A2F96 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				32B6EBF728B02717009D1AA5 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 2DDA048D28958230008A2F96 /* Products */;
 			projectDirPath = "";
@@ -425,20 +425,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2DDA053128958762008A2F96 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		32B6EBF728B02717009D1AA5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2DDA053228958762008A2F96 /* SnapKit */ = {
+		32B6EBF828B02717009D1AA5 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2DDA053128958762008A2F96 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 32B6EBF728B02717009D1AA5 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

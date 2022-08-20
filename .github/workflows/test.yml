@@ -1,0 +1,19 @@
+name: Build and Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+job:
+  test:
+    name: testing
+    runs-on: macos-lastest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      
+      - name: build and test
+        run: |
+          bundle exec fastlane test

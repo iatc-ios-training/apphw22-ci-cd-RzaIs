@@ -1,0 +1,7 @@
+project("Session 1.xcodeproj")
+
+clean(true)
+
+skip_build(false)
+
+code_coverage(true)
